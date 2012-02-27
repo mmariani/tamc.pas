@@ -1,0 +1,21 @@
+
+TAMC - di Marco Mariani
+v0.60 - 17 luglio 1994
+
+TAMC e' un programma che gioca a scacchi in modo completo.
+Implementa un algoritmo di alfabeta-pruning su un vettore di dati
+statico raggiungendo velocita' abbastanza elevate (su un 486 e'
+accettabile fargli calcolare mezzo milione di posizioni), gestisce
+e prevede l'arrocco, la promozione, la presa en-passant, riconosce il
+matto e lo stallo per mancanza di mosse legali o per le 50 mosse.
+Inoltre a parita' di valutazione sceglie la mossa in modo casuale, gioca
+nella parte del bianco, nero o contro se stesso, da' consigli al giocatore
+umano, e' dotato di un libro di aperture senza limiti di estendibilita'.
+Attualmente non riconosce la patta per ripetizione di mosse, e non fa nulla
+per evitare quella delle 50 mosse.
+
+Dopo aver scritto un piccolo libro di aperture (OPENINGS.OLD), ho trovato
+il sorgente del GNUChess, da cui ho tratto gran parte del nuovo libro.
+Il file originale (GNUCHESS.BOO) e' comunque incluso. Il file usato dal
+programma e' OPENINGS.TMC, ma si puo' giocare anche in mancanza di esso.
+
